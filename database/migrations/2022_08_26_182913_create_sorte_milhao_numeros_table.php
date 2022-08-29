@@ -27,6 +27,7 @@ class CreateSorteMilhaoNumerosTable extends Migration
      */
     public function down()
     {
+        
         Schema::dropIfExists('sorte_milhao_numeros');
     }
 }

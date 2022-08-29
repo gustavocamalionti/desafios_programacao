@@ -1,7 +1,11 @@
 Lote                                             |n° da sorte - Chave primária int | Código de segurança(letras - uppercase - excluindo(i, l, o, b, d, q) - 6 caracteres - no-repeat - Campo Unico)
-2000 lotes com 200 números cada (Após embaralhar |             0 A 999999          | AAAAAA
+2000 lotes com 500 números cada (Após embaralhar |             0 A 999999          | AAAAAA
 
 
 
 Consulta totalmente embaralhada.
 Todos esses dados - copiar e jogar em um excel.
+
+ACEFGHJKMNPRSTUVXWYZ 
+
+[A-C][E-H][J-K][M-N][P][R-Z]

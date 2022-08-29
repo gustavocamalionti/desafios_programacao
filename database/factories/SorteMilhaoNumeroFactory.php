@@ -2,10 +2,27 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use Faker\Provider\Base as Faker;
+use App\SorteMilhaoNumero as model;
+use Faker\Generator as Faker;
+use App\SorteMilhaoNumero;
 
-$factory->define(App\SorteMilhaoNumero::class, function (Faker $faker) {
-    return [
-        'CodSeguranca' => $faker -> numerify('Hello ###');
-    ];
+$factory->define(model::class, function (Faker $faker) {
+    $todas_letras_possiveis = "ACEFGHJKMNPRSTUVXWYZ";
+    //$todas_letras_possiveis = "ACEFGHJKMNPRSTUVXWYZ";
+    //$quantidade_Caracteres = "6";
+    
+
+    
+    //while True {
+    //    
+        try {
+            return [
+                'CodSeguranca' => $faker -> regexify("[$todas_letras_possiveis]{6}")
+            ];
+
+        } catch (Exception $e){
+            
+        }
+    //}
 });
+
